@@ -1,4 +1,0 @@
-## Append samples of your project ##
-resources:
-- student-app_v1_studentapp.yaml
-# +kubebuilder:scaffold:manifestskustomizesamples

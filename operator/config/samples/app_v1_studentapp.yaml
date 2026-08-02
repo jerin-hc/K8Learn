@@ -1,0 +1,15 @@
+apiVersion: app.ij3rry.com/v1
+kind: StudentApp
+metadata:
+  labels:
+    app.kubernetes.io/name: operator
+    app.kubernetes.io/managed-by: kustomize
+  name: studentapp-sample
+  namespace: student-app
+spec:
+  credentials:
+    secretName: postgres-db-secret
+    usernameKey: POSTGRES_USER
+    passwordKey: POSTGRES_PASSWORD
+    databaseKey: POSTGRES_DB
+  storageSize: 1Gi
